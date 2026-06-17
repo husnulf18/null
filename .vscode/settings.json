@@ -1,0 +1,7 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Abyss",
+    "workbench.iconTheme": "vscode-icons",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}

@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:
+    linear-gradient(
+    135deg,
+    #120458,
+    #4a00e0,
+    #8e2de2);
+
+}
+
+/* gelembung utama */
+.bubble{
+
+    width:800px;
+
+    padding:60px;
+
+    text-align:center;
+
+    color:white;
+
+    border-radius:50px;
+
+    background:
+    rgba(255,255,255,0.10);
+
+    backdrop-filter:blur(25px);
+
+    border:
+    1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 0 40px rgba(255,255,255,0.15);
+}
+
+/* icon */
+.icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+}
+
+/* judul */
+h1{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+}
+
+/* deskripsi */
+p{
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+    color:#e5e7eb;
+}
+
+/* form */
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+/* input */
+input,
+textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,0.15);
+
+    color:white;
+
+    font-size:18px;
+
+    outline:none;
+}
+
+textarea{
+
+    height:150px;
+
+    resize:none;
+}
+
+/* placeholder */
+input::placeholder,
+textarea::placeholder{
+
+    color:#d1d5db;
+}
+
+/* tombol */
+button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:20px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #ff6ec7,
+    #7c3aed);
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:scale(1.03);
+}

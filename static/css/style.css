@@ -1,0 +1,215 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background-image:
+url("../images/galaxy_bg.jpg");
+
+background-size:cover;
+background-position:center;
+
+font-family:Segoe UI;
+}
+
+.glass{
+
+width:900px;
+
+padding:50px;
+
+text-align:center;
+
+background:
+rgba(255,255,255,0.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:40px;
+
+color:white;
+
+box-shadow:
+0 0 50px rgba(255,255,255,0.15);
+}
+
+.logo{
+
+width:180px;
+
+margin-bottom:15px;
+}
+
+h1{
+
+font-size:70px;
+
+margin-bottom:15px;
+}
+
+p{
+
+font-size:24px;
+
+margin-bottom:20px;
+}
+
+.astronaut{
+
+width:250px;
+
+animation:
+float 4s ease-in-out infinite;
+}
+
+button{
+
+margin-top:20px;
+
+padding:18px 50px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:
+linear-gradient(
+90deg,
+#00c6ff,
+#7c3aed);
+
+color:white;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+    .title{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-size:60px;
+
+    color:white;
+
+    text-shadow:0 0 20px cyan;
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:40px;
+}
+
+.planet-grid{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap:50px;
+
+    justify-items:center;
+
+    margin-top:40px;
+}
+
+.planet{
+
+    text-decoration:none;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.planet-img{
+
+    width:140px;
+
+    transition:0.4s;
+
+    filter:
+    drop-shadow(
+    0 0 20px white);
+}
+
+.planet-img:hover{
+
+    transform:
+    scale(1.15)
+    rotate(10deg);
+}
+
+.planet span{
+
+    margin-top:10px;
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+.astronaut{
+
+    display:block;
+
+    width:160px;
+
+    margin:40px auto;
+
+    animation:
+    float 4s infinite ease-in-out;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}

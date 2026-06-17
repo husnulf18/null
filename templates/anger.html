@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Anger Planet</title>
+
+<style>
+
+body{
+    background:#7f1d1d;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+    margin:0;
+    padding-top:50px;
+}
+
+h1{
+    font-size:50px;
+}
+
+#angka{
+    font-size:80px;
+    margin-top:30px;
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+#pesan{
+    margin-top:30px;
+    font-size:25px;
+    color:yellow;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>😡 Anger Planet</h1>
+
+<p>Tarik napas dalam dan tenangkan diri</p>
+
+<div id="angka">
+5
+</div>
+
+<button onclick="mulaiLatihan()">
+🌬 Mulai Latihan
+</button>
+
+<div id="pesan"></div>
+
+<br><br>
+
+<a href="/map">
+<button type="button">
+🌌 Return To Galaxy
+</button>
+</a>
+
+<script>
+
+function mulaiLatihan(){
+
+let angka = 5;
+
+let hitung = setInterval(function(){
+
+    angka--;
+
+    document.getElementById("angka").innerHTML = angka;
+
+    if(angka <= 0){
+
+        clearInterval(hitung);
+
+        document.getElementById("angka").innerHTML = "😊";
+
+        document.getElementById("pesan").innerHTML =
+        "Hebat! Kamu berhasil menenangkan diri.";
+
+    }
+
+},1000);
+
+}
+
+</script>
+
+</body>
+
+</html>

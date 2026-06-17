@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Anxiety Planet</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+    to bottom,
+    #0f172a,
+    #312e81);
+
+    color:white;
+
+    font-family:Segoe UI;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+h1{
+
+    margin-top:30px;
+
+    font-size:60px;
+
+    color:#c084fc;
+
+    text-shadow:
+    0 0 20px #c084fc;
+}
+
+p{
+
+    font-size:25px;
+
+    margin-top:15px;
+}
+
+.astronaut{
+
+    width:220px;
+
+    margin-top:40px;
+
+    animation:
+    float 4s ease-in-out infinite;
+}
+
+.score{
+
+    font-size:30px;
+
+    margin-top:20px;
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:15px 40px;
+
+    font-size:22px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    background:#8b5cf6;
+
+    color:white;
+}
+
+button:hover{
+
+    transform:scale(1.08);
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>😰 Anxiety Planet</h1>
+
+<p>
+Face Your Worries And Collect Hope
+</p>
+
+<img
+src="/static/images/characters/hhhh.png"
+class="astronaut">
+
+<div class="score">
+
+Hope Score : 0
+
+</div>
+
+<br>
+
+<button onclick="mulaiGame()">
+
+🚀 Start Mission
+
+</button>
+
+<br>
+
+<a href="/map">
+
+<button>
+
+🌌 Return To Galaxy
+
+</button>
+
+</a>
+<script>
+
+function mulaiGame(){
+
+    alert("Mission Started!");
+
+}
+
+</script>
+</body>
+
+</html>
+

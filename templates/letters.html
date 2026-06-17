@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Daftar Surat</title>
+
+<style>
+
+body{
+
+font-family:Segoe UI;
+
+background:#111827;
+
+color:white;
+
+padding:40px;
+}
+
+.card{
+
+background:#1f2937;
+
+padding:20px;
+
+margin-bottom:20px;
+
+border-radius:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>📬 Semua Surat</h1>
+
+<br>
+
+{% for row in data %}
+
+<div class="card">
+
+<h2>{{row[1]}}</h2>
+
+<p>Email : {{row[2]}}</p>
+
+<p>Alamat : {{row[3]}}</p>
+
+<p>Tanggal : {{row[4]}}</p>
+
+<p>{{row[5]}}</p>
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>

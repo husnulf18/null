@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Mental Galaxy Map</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+
+    background-image:
+    url("/static/images/galaxy_bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    font-family:Segoe UI;
+
+    overflow:hidden;
+}
+
+/* Judul */
+
+.title{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:55px;
+
+    margin-top:20px;
+
+    text-shadow:
+    0 0 20px cyan;
+}
+
+/* Container */
+
+.map-container{
+
+    width:100%;
+    height:85vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+}
+
+/* Baris Planet */
+
+.row{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:180px;
+}
+
+/* Planet */
+
+.planet{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+}
+
+/* Gambar planet */
+
+.planet-img{
+
+    width:140px;
+
+    transition:0.5s;
+
+    filter:
+    drop-shadow(0 0 20px white);
+}
+
+.planet-img:hover{
+
+    transform:
+    scale(1.15)
+    rotate(10deg);
+}
+
+/* Nama planet */
+
+.planet span{
+
+    margin-top:10px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    text-shadow:
+    0 0 10px white;
+}
+
+/* Astronaut */
+
+.astronaut{
+
+    width:180px;
+
+    animation:
+    float 4s ease-in-out infinite;
+}
+
+/* Animasi Astronaut */
+
+@keyframes float{
+
+    0%{
+        transform:
+        translateY(0);
+    }
+
+    50%{
+        transform:
+        translateY(-20px);
+    }
+
+    100%{
+        transform:
+        translateY(0);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 class="title">
+🌌 Mental Galaxy
+</h1>
+
+<div class="map-container">
+
+
+    <!-- SADNESS + ANGER -->
+    <div class="row">
+
+        <a href="/sadness" class="planet">
+
+            <img
+            src="/static/images/planets/sadness.png"
+            class="planet-img">
+
+            <span>Sadness</span>
+
+        </a>
+
+        <a href="/anger" class="planet">
+
+            <img
+            src="/static/images/planets/anger.png"
+            class="planet-img">
+
+            <span>Anger</span>
+
+        </a>
+
+    </div>
+
+    <!-- OVERTHINKING -->
+
+    <a href="/overthinking" class="planet">
+
+        <img
+        src="/static/images/planets/overthinking.png"
+        class="planet-img">
+
+        <span>Overthinking</span>
+
+    </a>
+
+    <!-- ANXIETY -->
+
+    <a href="/anxiety" class="planet">
+
+        <img
+        src="/static/images/planets/anxiety.png"
+        class="planet-img">
+
+        <span>Anxiety</span>
+
+    </a>
+
+    <!-- ASTRONAUT -->
+
+    <img
+    src="/static/images/characters/astronaut.png"
+    class="astronaut">
+
+</div>
+
+</body>
+
+</html>

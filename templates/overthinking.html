@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Overthinking Planet</title>
+
+<style>
+
+body{
+
+    background:
+    linear-gradient(
+    to bottom,
+    #111827,
+    #1e293b);
+
+    color:white;
+
+    text-align:center;
+
+    font-family:Segoe UI;
+
+    padding-top:40px;
+}
+
+h1{
+
+    font-size:55px;
+
+    color:#facc15;
+}
+
+.question{
+
+    font-size:28px;
+
+    margin-top:40px;
+
+    margin-bottom:30px;
+}
+
+button{
+
+    padding:15px 35px;
+
+    margin:10px;
+
+    border:none;
+
+    border-radius:25px;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+.fact{
+
+    background:#22c55e;
+
+    color:white;
+}
+
+.assumption{
+
+    background:#ef4444;
+
+    color:white;
+}
+
+#result{
+
+    margin-top:40px;
+
+    font-size:30px;
+
+    color:#fde68a;
+}
+
+.back{
+
+    background:white;
+
+    color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🤯 Overthinking Planet</h1>
+
+<p>
+Learn To Separate Facts From Assumptions
+</p>
+
+<div class="question">
+
+My friend has not replied to my message for 3 hours.
+
+Does that mean they are angry with me?
+
+</div>
+
+<button
+class="fact"
+onclick="jawabanSalah()">
+
+YES
+
+</button>
+
+<button
+class="assumption"
+onclick="jawabanBenar()">
+
+NO
+
+</button>
+
+<div id="result"></div>
+
+<br><br>
+
+<a href="/map">
+
+<button class="back">
+
+🌌 Return To Galaxy
+
+</button>
+
+</a>
+
+<script>
+
+function jawabanBenar(){
+
+document.getElementById("result").innerHTML =
+
+"✅ Correct! That is an assumption, not a fact.";
+
+}
+
+function jawabanSalah(){
+
+document.getElementById("result").innerHTML =
+
+"❌ Not Quite. We do not know why they haven't replied.";
+
+}
+
+</script>
+
+</body>
+
+</html>
